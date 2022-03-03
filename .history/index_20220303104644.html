@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" ng-app="App" ng-controller="IGController" ng-init="init();$root.scrollhide='bodymain';showmainloader=true;" lang="en" xml:lang="en">
+<head>
+   
+    <title>
+        Best Health Insurance
+    </title>
+    
+    <meta charset="utf-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Health insurance pays the costs of the health services you receive, such as doctor visits, hospital stays, and medicines. Compare/Buy best health insurance plans online.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/healthstnew.css" type="text/css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <style>
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak {
+            display: none !important;
+        }
+    </style>
+</head>
+<body class="bg-shape  ">
+
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJXJGK2"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    
+  
+    <main>
+        <div class="healthbannerarea2">
+            <div class="container  ">
+
+                <div class="col-md-12 col-sm-12 nopad ">
+
+                    <div class="col-md-7">
+                        <h1>Best <span class="highlighted">Health Insurance</span> </h1>
+                        <p class="subhead"><span class=" amount">₹ 5 Lac</span> Cover Starts @ <span class=" amount">₹ 15/day*</span></p>
+                        <span class="mobbannerhealth mbar"></span>
+                        <div class="benefitssec secmedical nopad">
+                            <ul>
+                                <li><span class="benefiticon benefits1"></span>Free Health Check-Up</li>
+                                <li><span class="benefiticon benefits2"></span>Best OPD Covered</li>
+                                <li><span class="benefiticon benefits3"></span>Claim Assistance</li>
+                                <li><span class="benefiticon benefits4"></span>100% Tax Benefits u/s 80D.</li>
+                                <li><span class="benefiticon benefits5"></span>Cashless Hospitalization </li>
+                                <li><span class="benefiticon benefits6"></span>Bonus on No claim</li>
+                            </ul>
+                            <div class="clr"></div>
+                        </div>
+                    </div>
+                    <div class=" col-md-5 nopad ">
+                        <div class="smpop smpophealth col-md-12 col-sm-12 col-xs-12 ">
+
+
+                            <div class="col-md-12 col-sm-12 col-xs-12 col-xxs-12 nopad">
+                                <div>
+                                  <h1> Get the best health insurance </h1>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-6 widgwidth2 mrgtb1 nopad2">
+                                    <div class="col-md-12 popuph">Adult(s)</div>
+                                    <md-input-container class="inputcontainer pad5">
+                                        <span data-ng-class="a1class" data-ng-click="checkadult(1)">1</span>
+                                        <span data-ng-class="a2class" data-ng-click="checkadult(2)">2</span>
+                                    </md-input-container>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-6 widgwidth3 mrgtb1 nopad2">
+                                    <div class="col-md-12 popuph">Child(ren)</div>
+                                    <md-input-container class="inputcontainer pad5">
+
+
+                                        <span data-ng-class="chclass[0]" data-ng-click="checkchild(0)">0</span>
+                                        <span data-ng-class="chclass[1]" data-ng-click="checkchild(1)">1</span>
+                                        <span data-ng-class="chclass[2]" data-ng-click="checkchild(2)">2</span>
+                                        <span data-ng-class="chclass[3]" data-ng-click="checkchild(3)">3</span>
+                                        <span data-ng-class="chclass[4]" data-ng-click="checkchild(4)">4</span>
+
+
+                                        <span ng-show="childerror" ng-cloak class="errorst erp">Enter No Between 0 to 4</span>
+                                    </md-input-container>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6 col-xs-12 col-xxs-12 nopad2 widgwidth mrgtb1">
+                                    <div class="col-md-12 popuph">
+                                        <span ng-show="selectedadult == 1 && selectedchild == 0"> Age in years </span>
+                                        <span ng-show="(selectedadult == 2)"> Age of eldest adult in years</span>
+                                        <span ng-show="(selectedadult == 1 && selectedchild > 0)"> Age of adult in years</span>
+                                        <span class=" infomobico" data-toggle="popover" data-placement="right" data-content="Premium is dependent on your exact age. " data-trigger="hover">i</span>
+                                    </div>
+                                    <md-input-container class="inputcontainer pad5 l-a2 no_field">
+                                        <label class="landing-inputlabel">Age in years</label>
+                                        <input type="tel" Placeholder="Enter Age" maxlength="3" minlength="1" numbers-only id="txtAge" name="txtAge" ng-model="UserAge" class="landing-inputbox" ng-blur="checkAge(UserAge)" />
+                                        <span ng-show="ageerror" ng-cloak class="errorst erp">Enter age between 28-100 yrs</span>
+                                    </md-input-container>
+                                </div>
+
+
+                                <div class="col-md-6 col-sm-6 col-xs-12 col-xxs-12 widgwidth mrgtb1 nopad2">
+                                    <div class="col-md-12 popuphn">
+                                        City
+                                    </div>
+                                    <md-input-container class="inputcontainer pad5 l-a2 no_field">
+                                        <md-autocomplete class="landing-autocomplete2 " md-blur="checkcityerrors()" ng-keyup="updatedallcity()" md-no-cache="true" md-selected-item="selectedItem2" md-search-text="searchText" md-items="item in commoncitystate|startsWithLetter1:searchText" md-min-length="1"
+                                                         md-item-text="item.cityname" placeholder="City..">
+                                            <md-item-template>
+                                                <span md-highlight-text="searchText" md-highlight-flags="^i">{{item.cityname}}</span>
+                                            </md-item-template>
+                                            <md-not-found>
+                                                {{citymatch}}
+                                                <!--Loading your City <span class="saving"><span>.</span><span>.</span><span>.</span></span>-->
+                                            </md-not-found>
+                                        </md-autocomplete>
+                                        <span ng-cloak ng-show="cityerror" class="errorst erp">Select a  city from list</span>
+
+                                    </md-input-container>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-12 col-xxs-12 widgwidth mrgtb1 nopad2">
+                                    <div class="col-md-12 popuph">Mobile No. <span class=" infomobico" data-toggle="popover" data-placement="right" data-content="We will send a link to recommended health plans to your mobile number for future reference." data-trigger="hover">i</span></div>
+                                    <md-input-container class="inputcontainer pad5 l-a2 no_field">
+                                        <label class="landing-inputlabel">Mobile No.</label>
+                                        <input type="tel" Placeholder="Mobile No." numbers-Only maxlength="10"  id="txtMobileNumber" name="txtMobileNumber" ng-model="userMobile" class="landing-inputbox" ng-blur="checkmobileerror()" />
+                                        <span ng-show="mobileerror" ng-cloak class="errorst erp">{{mobileerrortext}}</span>
+
+                                        <span ng-show="mobilenumbererror" ng-cloak class="errorst erp">{{mobileerrormsg}}</span>
+                                        <span ng-show="wrongMobile" ng-cloak class="errorst erp">{{wrongMobileMsg}}</span>
+                                        <span ng-cloak class="errorst erp">{{leadCreationExceedMsg}}</span>
+                                    </md-input-container>
+                                </div>
+
+
+                                <div class="foot-filter col-md-12 col-sm-12 col-xs-12 col-xxs-12 text-center mrgtbn3 btarea">
+                                    <button type="button" class="quotesbtn1" ng-click="gethealthquotespop(1)">
+                                        <span ng-show="!showbtnleadloader" ng-disabled="showbtnleadloader">
+                                            Get Live Quotes
+                                        </span>
+                                        <div class="spinner" ng-cloak ng-show="showbtnleadloader">
+                                            <div class="bounce1"></div>
+                                            <div class="bounce2"></div>
+                                            <div class="bounce3"></div>
+                                        </div>
+
+                                    </button>
+
+                                    
+                                </div>
+
+                            </div>
+                                      <script type="text/javascript" src="js/main.min.js" defer></script>
+         
+
+            <head>
+                <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+                <meta name="Robots" content="NOINDEX " />
+            </head>
+</body>
+</html>
